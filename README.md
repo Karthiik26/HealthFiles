@@ -44,27 +44,6 @@ This project is structured as a **monorepo** with two main branches:
 
 ```
 
-HealthFiles/
-│
-├── client/            # Frontend (Next.js)
-│   ├── app/
-│   ├── components/
-│   ├── public/
-│   └── package.json
-│
-├── server/            # Backend (Node.js + Express)
-│   ├── routes/
-│   ├── models/
-│   ├── controllers/
-│   ├── uploads/
-│   └── server.js
-│
-└── README.md
-
-````
-
----
-
 ## Environment Variables
 
 ### Frontend (`client/.env.local`)
