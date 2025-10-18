@@ -65,22 +65,11 @@ HealthFiles/
 
 ---
 
-## Deployment
-
-| Platform | URL | Description |
-|-----------|------|-------------|
-| **Frontend (Vercel)** | https://healthfiles.vercel.app | Deployed Next.js app |
-| **Backend (Render)** | https://healthfiles-server.onrender.com | Deployed Express API |
-
-> Make sure to update API base URLs in your frontend `.env` before deploying.
-
----
-
-##  Environment Variables
+## Environment Variables
 
 ### Frontend (`client/.env.local`)
 ```env
-NEXT_PUBLIC_API_URL=https://healthfiles-server.onrender.com
+NEXT_PUBLIC_API_URL=http://localhost:4000
 ````
 
 ### Backend (`server/.env`)
@@ -125,21 +114,22 @@ npm install
 nodemon
 ```
 
-Backend runs on 👉 **[http://localhost:4000]http://localhost:4000)**
-
-
-## Features
-
-User Authentication (Signup / Login)
-Edit Profile (Email, Gender, Phone)
-File Upload (PDF & Image support)
-File Preview and Delete
-Responsive Dashboard Layout
-API Integration with proper validation
+Backend runs on 👉 **[http://localhost:4000](http://localhost:4000)**
 
 ---
 
-##  API Response Standards
+## Features
+
+* User Authentication (Signup / Login)
+* Edit Profile (Email, Gender, Phone)
+* File Upload (PDF & Image support)
+* File Preview and Delete
+* Responsive Dashboard Layout
+* API Integration with proper validation
+
+---
+
+## API Response Standards
 
 | Code  | Meaning      | Example                   |
 | ----- | ------------ | ------------------------- |
@@ -150,24 +140,10 @@ API Integration with proper validation
 
 ---
 
-##  Notes
+## Notes
 
 * Monorepo setup allows better code organization.
 * All data operations are API-driven.
 * Ensure MySQL is running locally before starting the backend.
-
-
-### Bonus Points
-
-* Fully deployed project (Vercel + Render)
-* Responsive and corporate-grade UI
-* Clean folder structure and reusable components
-
-
-**Live Demo:**
-🔗 Frontend → [https://healthfiles.vercel.app](https://healthfiles.vercel.app)
-
-🔗 Backend → [https://healthfiles-server.onrender.com](https://healthfiles-server.onrender.com)
-
-
-
+cordingly.
+```
